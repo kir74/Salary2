@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09af58f7-c8e7-4128-bdbd-7d87d85f7166">
+  <producedTypes>
+    <selectionType typeId="30ab058c-17b6-4889-99e5-393c02bac5b1" valueTypeId="edc24ea4-6470-4a79-a996-82518f66a656"/>
+    <listType typeId="983779fe-492d-4114-8bcc-d22bef2b900f" valueTypeId="2d12056a-bcbe-4c05-9599-2a7c4c790f87"/>
+    <managerType typeId="93c97552-9b66-449b-9086-bd838239a299" valueTypeId="5210c0b6-7aa0-40b0-8a2b-3dd963bc698d"/>
+    <recordSetType typeId="1b4740f8-4664-40c1-8b35-b76b9113a655" valueTypeId="0b4e5816-8edf-415e-9745-430892c61f03"/>
+    <recordKeyType typeId="35f8c250-df6a-4489-8de5-1815d802e258" valueTypeId="fdf367f3-3503-48c6-b386-9d53a3b7e40a"/>
+    <recordType typeId="f4e25d00-7e8c-4ded-a4a9-ef68a1fb197c" valueTypeId="62247a98-6019-4069-9dc0-3b58f351b896"/>
+    <recordManagerType typeId="61759bb7-b86f-418e-893d-00ef185383c4" valueTypeId="5e2dfcec-6a13-4dde-95f5-5a1468610ef5"/>
+  </producedTypes>
+  <name>Календарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="82d54b6f-3c5c-4929-a9df-d8cb856efb5c">
+    <name>Признак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <dimensions uuid="4fa65c70-2302-4e69-860d-e44fc673472d">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

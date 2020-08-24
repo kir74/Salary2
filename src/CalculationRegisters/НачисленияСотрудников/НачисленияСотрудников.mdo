@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51d4ffb4-dc25-4ace-8e36-68a17f374266">
+  <producedTypes>
+    <selectionType typeId="75fd0bf0-4959-4f80-bb1d-84eb741cf599" valueTypeId="0816c52a-79ce-411d-aa87-dea919b98f41"/>
+    <listType typeId="831bd6da-4f36-4d22-9ee4-2ee78fbd6519" valueTypeId="07591bb8-ebdf-45a3-9ebe-b817cc02d7a7"/>
+    <managerType typeId="caa78d50-ee3a-483c-83bd-a131d0fe6d11" valueTypeId="6ef692ff-c1d5-4b92-8dca-44ac5fb6a526"/>
+    <recordSetType typeId="e6f807fc-65ae-4a7a-9d38-4afd7e75b811" valueTypeId="75a7c198-d29a-4631-aa45-6103cd58d5a7"/>
+    <recordKeyType typeId="bde93cbc-f0c7-4ccd-a27a-71c40f28e783" valueTypeId="020cb542-d90f-49fa-aa16-67d1cbd52f87"/>
+    <recordType typeId="e8bb25ae-1319-4c54-9959-ea281c207cb4" valueTypeId="c7305180-e86a-4bad-bbf7-805595a3b9f1"/>
+    <recalcsType typeId="6eb57f7b-b5a8-457d-a75b-024646ab95e7" valueTypeId="b33de0a0-1606-4a42-b866-d172b1fb7ad5"/>
+  </producedTypes>
+  <name>НачисленияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.Календарь</schedule>
+  <scheduleValue>InformationRegister.Календарь.Resource.Признак</scheduleValue>
+  <scheduleDate>InformationRegister.Календарь.Dimension.Дата</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="af666e85-a472-4f3c-9ff5-9a893d9f78f2">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="8b36e1ac-9f2f-4a73-9e6a-a49524568324">
+    <name>Параметр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="20312914-312b-40c6-85cc-56afa4dc6e27">
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>

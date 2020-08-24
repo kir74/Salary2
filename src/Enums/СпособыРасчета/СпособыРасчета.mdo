@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ff85a7e-4353-4bbc-be45-a2316e3dd978">
+  <producedTypes>
+    <refType typeId="3aa36ca2-9ec4-4291-a301-e3d16138a895" valueTypeId="a00ef8d8-8095-4a14-adaa-c5ee231766c3"/>
+    <listType typeId="47f09357-aee1-4a3b-97a4-175ded23497d" valueTypeId="70ecd7bd-0067-41ae-a416-4a6d8a93b4e6"/>
+    <managerType typeId="9d1bab4f-acce-472c-8f06-051715134310" valueTypeId="10135de2-0bfe-42d8-9ce3-4d89e497eceb"/>
+  </producedTypes>
+  <name>СпособыРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы расчета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8d85b8ad-3fdd-4c82-b091-d00acdadc898">
+    <name>ФиксированнаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированная сумма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6e9dd7ba-1491-4358-9798-a78e265d0776">
+    <name>Процентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процентом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="31a7a82f-c1e4-44e2-b59c-b1267b038958">
+    <name>ПоДням</name>
+    <synonym>
+      <key>ru</key>
+      <value>По дням</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="98eeb63a-63ef-453e-89dc-60f0fe6d7c00">
+    <name>ПропорциональноОтработанномуВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропорционально отработанному времени</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

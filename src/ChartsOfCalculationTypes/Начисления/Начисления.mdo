@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a74d6f31-7ebf-44a0-8bb5-c508d5011609">
+  <producedTypes>
+    <objectType typeId="bbf63cfe-ba11-4fb2-8715-abda3e42bc6c" valueTypeId="a49f791a-db29-4bad-a429-1491197a2108"/>
+    <refType typeId="aeb74caa-b517-4366-9571-6d9bf57cef2b" valueTypeId="8fdf7e42-83da-4258-9c1b-2d286e8389e1"/>
+    <selectionType typeId="d383eecf-e667-4de9-9643-9e021ae11b01" valueTypeId="b88cded7-bb21-460e-98d4-3b87b49ec0a7"/>
+    <listType typeId="591f8348-92a5-4800-a7bb-0140d542fe0c" valueTypeId="f0f075b0-22a5-43b6-ad1a-bf582df9b115"/>
+    <managerType typeId="ed5cbe26-a5b6-4eee-a6f7-9afdd7170a65" valueTypeId="87f1a189-96e0-4788-b4b3-a80fc3407b1d"/>
+    <displacingCalculationTypesType typeId="643aa54a-6112-4711-adea-de557e69438a" valueTypeId="54a6c15f-3325-4fab-8c2e-4d9681519a82"/>
+    <displacingCalculationTypesRowType typeId="bd4d56a4-5fb9-41cf-b687-69b1f99f8cad" valueTypeId="6a9978c4-fd6d-4c3b-9d6e-bfaaf7ae1cdc"/>
+    <baseCalculationTypesType typeId="54e103c9-076f-47ff-9ae9-c39e602681b8" valueTypeId="afb73419-da3f-44a4-b8f1-7c9704a3e0c2"/>
+    <baseCalculationTypesRowType typeId="a5f5387c-4c96-4248-acfe-534690f43405" valueTypeId="50329245-5a1f-4e9f-a0e3-75c6628eb088"/>
+    <leadingCalculationTypesType typeId="c05392e6-ad75-4ea1-9d22-fa5664a56ea0" valueTypeId="3260321b-2b1e-453f-9506-e791524156ff"/>
+    <leadingCalculationTypesRowType typeId="71f20b62-f044-4a72-af7a-014b583fc616" valueTypeId="89b2c5ef-45a4-4288-9f4c-9f8493e4a39a"/>
+  </producedTypes>
+  <name>Начисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
+  <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="d33e1005-ae2b-4ea9-9d7d-6c82aee88f5e">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="b3bd53a6-72db-4162-90e6-59cd102b0473">
+      <name>Премия</name>
+      <description>Премия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+      <base>ChartOfCalculationTypes.Начисления.Оклад</base>
+    </items>
+  </predefined>
+  <attributes uuid="54efd099-c090-424a-a670-0e6d29c49513">
+    <name>Способ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРасчета</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCalculationTypes>

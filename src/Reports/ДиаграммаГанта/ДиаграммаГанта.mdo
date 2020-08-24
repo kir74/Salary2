@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cca526ea-d7a7-459c-9803-9d6286acf1ee">
+  <producedTypes>
+    <objectType typeId="dc1c0bef-4f7a-4962-9928-f9d803cb6018" valueTypeId="81b215da-0aa8-4e0d-8ded-40d4f52869d8"/>
+    <managerType typeId="6399a05f-3a10-4204-9fd9-71b02995f49e" valueTypeId="9dc9125e-0ea1-46ae-83b3-6e05f5985851"/>
+  </producedTypes>
+  <name>ДиаграммаГанта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диаграмма ганта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДиаграммаГанта.Form.ФормаОтчета</defaultForm>
+  <forms uuid="8d6ff412-95ae-4b88-a47b-0d4df3f6fa8b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

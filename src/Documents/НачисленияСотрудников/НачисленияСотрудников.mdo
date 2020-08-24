@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b871dbdb-6041-4b6a-82d2-e291b273aec5">
+  <producedTypes>
+    <objectType typeId="a80163cb-b9c1-48b8-8254-7001f5726030" valueTypeId="bb59ba68-5676-4266-bf14-f6d362b01a43"/>
+    <refType typeId="40a7a0ad-9b24-4932-ad4a-e0053203cbed" valueTypeId="fb0df55b-cea9-43ae-925f-a7fcf8f8f416"/>
+    <selectionType typeId="b683a59b-2191-4d21-a9c6-588ad54ca1e0" valueTypeId="e57896b4-e339-4752-b442-971fb92f3c6f"/>
+    <listType typeId="0d81f070-1d2a-4914-97a9-53c2de8b8ce8" valueTypeId="e287f700-3484-431f-b1db-cb382f6fbcf3"/>
+    <managerType typeId="b8e46cde-620f-4c81-a38c-9cc97ebe1deb" valueTypeId="db947f06-ce32-43b5-9ad3-6c7c39e4929e"/>
+  </producedTypes>
+  <name>НачисленияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачисленияСотрудников.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>CalculationRegister.НачисленияСотрудников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="33da935b-48ae-493f-8b53-08bac9a069b5">
+    <producedTypes>
+      <objectType typeId="018127a6-2c82-425f-be77-f5f7392d06c6" valueTypeId="bab1098f-3ce5-4684-944e-6eb339e05996"/>
+      <rowType typeId="0c6ba729-3960-467a-afe3-036cab7b6aa8" valueTypeId="aa356180-8272-4513-beb8-48e894b65c9d"/>
+    </producedTypes>
+    <name>Начисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисления</value>
+    </synonym>
+    <attributes uuid="267bafa7-0b46-4ba0-8a1b-34063073e1e6">
+      <name>Сотрудники</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудники</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5375ac70-e16c-4359-894d-41ebf577f3ad">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7b9dbd33-91f2-4ff6-bf60-4a1de636c1b6">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e1542246-c785-4ccd-8a6b-a0b6bfdaaeeb">
+      <name>Параметр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8d046e4d-080a-49be-9e76-dcbf345f75f9">
+      <name>БазовыйПериодНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Базовый период начало</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d3debd9c-2402-4584-8e8c-fa7f6479e976">
+      <name>БазовыйПериодКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Базовый период конец</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="97bb4f4b-dd67-490b-91e9-9e6f979f824f">
+      <name>ПериодДействияНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период действия начало</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9620cf8f-c5b6-4c0c-b577-88cfe34a9be2">
+      <name>ПериодДействияКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период действия конец</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
